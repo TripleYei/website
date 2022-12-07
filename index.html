@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="header">
+		<h1>Logo</h1>
+		<ul>
+			<li><a href="#">OverView</a></li>
+			<li><a href="#">Examples</a></li>
+			<li><a href="#">Tour</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>
+		<div id="nav-button">
+			<li><a href="#">Download</a></li>
+		</div>
+		
+
+	</div>
+	
+	<div id="container">
+		<h1>Welcome to Website</h1>
+
+	</div>
+	<div id="text">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	</div>
+	
+	<style>
+		body{
+			margin: 0;
+		}
+
+
+		#header{
+			
+			color:black;
+			display: flex;
+			justify-content: space-around;
+			position: sticky;
+			top: -20px;
+			height: 120px;
+		}
+		#header img{
+			display: flex;
+		}
+		#header ul{
+			display: flex;
+		}
+		#header li{
+			font-size: 1.5em;
+			margin: 15px;
+			list-style-type: none;
+			
+		}
+		#header a{
+			text-decoration: none;
+			color:black;
+
+		}
+
+		#header a:hover{
+			padding: 25%;
+			color:white;
+		}
+		#nav-button li{
+			padding: 25px;
+			border-radius: 35px;
+			background-color: #04ddb2;
+			color:white;
+		}
+		#nav-button a{
+			color:white;
+		}
+		
+		#container{
+			background-image: url("https://picsum.photos/200/300");
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			padding: 50%;
+		}
+
+		#container h1{
+			font-size: 15em;
+			font-weight: 800px;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+
+		}
+		
+
+		@media only screen and (max-width: 600px) {
+
+			#header h1 , #header ul , #nav-button{
+				display:flex;
+				flex-direction: column;
+			}
+			
+			#container{
+				display: flex;
+				flex-direction: column;
+				
+
+
+			}
+			#container h1{
+				font-size: 3em;
+				font-weight: 800px;
+
+				
+			}
+		}
+
+	</style>
+</body>
+</html>
