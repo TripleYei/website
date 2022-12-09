@@ -9,7 +9,9 @@
 <body>
 	<div id="header">
 		<h1>Logo</h1>
-		<ul>
+		<span class="ocultar" onclick="pulsar()">&#9776;</span>
+		<span class="cerrar" onclick="cerrar()">&times;</span>
+		<ul id="lista">
 			<li><a href="#">OverView</a></li>
 			<li><a href="#">Examples</a></li>
 			<li><a href="#">Tour</a></li>
@@ -33,6 +35,9 @@
 	<style>
 		body{
 			margin: 0;
+		}
+		.ocultar{
+			display:none;
 		}
 
 
@@ -93,14 +98,33 @@
 			text-align: center;
 
 		}
+		.cerrar{
+				display: none;
+			}
 		
 
 		@media only screen and (max-width: 600px) {
 
+			.ocultar{
+				display: block;
+			}
+			.cerrar{
+				display: block;
+			}
+			#header ul{
+				display: none;
+			}
+
+
+
+			
+			/*
 			#header h1 , #header ul , #nav-button{
 				display:flex;
 				flex-direction: column;
 			}
+			*/
+
 			
 			#container{
 				display: flex;
@@ -121,5 +145,17 @@
 		}
 
 	</style>
+
+	<script>
+		function pulsar(){
+			document.getElementById("lista").style.display ="block";
+
+		}
+
+		function cerrar(){
+			document.getElementById("lista").style.display = "none";
+		}
+		
+	</script>
 </body>
 </html>
