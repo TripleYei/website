@@ -10,7 +10,7 @@
 	<div id="header">
 		<h1>Logo</h1>
 		<span class="ocultar" onclick="pulsar()">&#9776;</span>
-		<span class="cerrar" onclick="cerrar()">&times;</span>
+		
 		<ul id="lista">
 			<li><a href="#">OverView</a></li>
 			<li><a href="#">Examples</a></li>
@@ -98,19 +98,16 @@
 			text-align: center;
 
 		}
-		.cerrar{
-				display: none;
-			}
+		
 		
 
 		@media only screen and (max-width: 600px) {
 
 			.ocultar{
 				display: block;
+				font-size: 5em;
 			}
-			.cerrar{
-				display: block;
-			}
+
 			#header ul{
 				display: none;
 			}
@@ -152,9 +149,7 @@
 
 		}
 
-		function cerrar(){
-			document.getElementById("lista").style.display = "none";
-		}
+		
 		
 	</script>
 </body>
